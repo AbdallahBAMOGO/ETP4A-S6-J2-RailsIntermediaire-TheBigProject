@@ -1,0 +1,3 @@
+<h1><%= @gossip.title %></h1>
+<p><%= @gossip.content %></p>
+<p>Écrit par <%= link_to @gossip.user.first_name, user_path(@gossip.user) %> le <%= @gossip.created_at.strftime('%d/%m/%Y') %></p>
